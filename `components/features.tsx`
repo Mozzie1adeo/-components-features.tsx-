@@ -1,0 +1,42 @@
+import { CircleCheck, Smartphone, CarTaxiFrontIcon as Taxi } from "lucide-react"
+
+export default function Features() {
+  return (
+    <div className="py-12">
+      <h2 className="mb-12 text-center text-3xl font-bold text-navy-900">Nos avantages</h2>
+
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="flex flex-col items-center rounded-lg bg-white p-6 text-center shadow-md transition-all hover:shadow-lg">
+          <div className="mb-4 rounded-full bg-sky-100 p-3">
+            <CircleCheck className="h-8 w-8 text-sky-600" />
+          </div>
+          <h3 className="mb-2 text-xl font-semibold">Zéro Compétence Requise</h3>
+          <p className="text-gray-600">
+            Notre interface intuitive ne nécessite aucune connaissance technique pour être utilisée efficacement.
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center rounded-lg bg-white p-6 text-center shadow-md transition-all hover:shadow-lg">
+          <div className="mb-4 rounded-full bg-sky-100 p-3">
+            <Taxi className="h-8 w-8 text-sky-600" />
+          </div>
+          <h3 className="mb-2 text-xl font-semibold">Pour Taxi, VTC et Capacitaire</h3>
+          <p className="text-gray-600">
+            Solution adaptée à tous les types de services de transport de personnes, quelle que soit votre flotte.
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center rounded-lg bg-white p-6 text-center shadow-md transition-all hover:shadow-lg">
+          <div className="mb-4 rounded-full bg-sky-100 p-3">
+            <Smartphone className="h-8 w-8 text-sky-600" />
+          </div>
+          <h3 className="mb-2 text-xl font-semibold">Accessible Depuis Un Smartphone</h3>
+          <p className="text-gray-600">
+            Interface responsive permettant de gérer vos réservations depuis n'importe quel appareil, où que vous soyez.
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
